@@ -29,16 +29,17 @@ By including `stock: { $gte: item.quantity }` directly in the query criteria, Mo
 
 ## Setup Instructions
 
+*Note: `.env` files for both the frontend and backend have been committed to the repository for ease of evaluation during this interview process. You do not need to manually configure environment variables to start the project.*
+
 ### Backend
 1. Navigate to `node-backend`
 2. Run `npm install`
-3. Configure `.env` with `MONGODB_URI`
-4. Run `npm run dev`
+3. Run `npm run dev` (or `npm run build` & `npm start`)
 
 ### Frontend
 1. Navigate to `next-frontend`
 2. Run `npm install`
-3. Run `npm run dev`
+3. Run `npm run dev` (or `npm run build` & `npm start`)
 
 ## Recent Improvements
 - Implemented real-time API-driven cart (no local storage discrepancies)
