@@ -22,7 +22,7 @@ export function DailyEssentialsSection() {
                     <div key={idx} className="flex flex-col items-center group cursor-pointer">
                         <div className={`w-full aspect-square rounded-2xl flex items-center justify-center mb-4 transition bg-[#F8F9FA] group-hover:shadow-md border border-gray-100 ${idx === 0 ? "border-[#008ECC]" : ""}`}>
                             {/* Placeholder for item image */}
-                            <div className="w-24 h-24 bg-gradient-to-tr from-green-300 to-yellow-200 rounded-full opacity-80 mix-blend-multiply"></div>
+                            <div className="w-24 h-24 bg-linear-to-tr from-green-300 to-yellow-200 rounded-full opacity-80 mix-blend-multiply"></div>
                         </div>
                         <h3 className="font-semibold text-sm text-gray-700 mb-1 group-hover:text-[#008ECC] transition">{item.name}</h3>
                         <p className="text-xs font-bold text-gray-900">{item.discount}</p>

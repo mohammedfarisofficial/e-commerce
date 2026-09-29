@@ -95,10 +95,10 @@ export function ProductSection() {
                                 <span>OFF</span>
                             </div>
 
-                            <div className="bg-[#F8F9FA] pt-6 pb-4 flex justify-center items-center h-48 relative overflow-hidden flex-shrink-0">
+                            <div className="bg-[#F8F9FA] pt-6 pb-4 flex justify-center items-center h-48 relative overflow-hidden shrink-0">
                                 <div className="w-24 h-40 bg-gray-200 rounded-md relative shadow-md">
                                     <div className="absolute inset-1 bg-black rounded overflow-hidden">
-                                        <div className="w-full h-full bg-gradient-to-br from-blue-400 to-purple-500 opacity-80" />
+                                        <div className="w-full h-full bg-linear-to-br from-blue-400 to-purple-500 opacity-80" />
                                     </div>
                                 </div>
                             </div>

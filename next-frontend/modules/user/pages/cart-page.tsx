@@ -63,7 +63,7 @@ export function CartPage() {
                         <div className="grow space-y-4">
                             {state.items.map((item) => (
                                 <div key={item.id} className="bg-white rounded-2xl p-4 sm:p-6 shadow-sm border border-gray-100 flex flex-col sm:flex-row gap-6 relative group">
-                                    <div className="w-full sm:w-32 h-32 bg-[#F8F9FA] rounded-xl flex items-center justify-center overflow-hidden flex-shrink-0">
+                                    <div className="w-full sm:w-32 h-32 bg-[#F8F9FA] rounded-xl flex items-center justify-center overflow-hidden shrink-0">
                                         {item.image ? (
                                             <img src={item.image} alt={item.name} className="object-cover w-full h-full" />
                                         ) : (
@@ -121,7 +121,7 @@ export function CartPage() {
                             ))}
                         </div>
 
-                        <div className="w-full lg:w-96 flex-shrink-0">
+                        <div className="w-full lg:w-96 shrink-0">
                             <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 sticky top-4">
                                 <h3 className="text-xl font-semibold text-gray-800 mb-6 pb-4 border-b border-gray-100">Order Summary</h3>
 

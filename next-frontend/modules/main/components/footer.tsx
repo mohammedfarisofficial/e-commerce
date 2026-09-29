@@ -6,24 +6,24 @@ import Image from "next/image";
 export function Footer() {
     return (
         <footer className="bg-[#008ECC] text-white pt-12 pb-6 px-4 md:px-8 overflow-hidden relative">
-            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-white opacity-5 rounded-full -translate-y-1/2 translate-x-1/3"></div>
-            <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-white opacity-5 rounded-full translate-y-1/3 translate-x-1/4"></div>
+            <div className="absolute top-0 right-0 w-125 h-125 bg-white opacity-5 rounded-full -translate-y-1/2 translate-x-1/3"></div>
+            <div className="absolute bottom-0 right-0 w-75 h-75 bg-white opacity-5 rounded-full translate-y-1/3 translate-x-1/4"></div>
 
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 relative z-10">
                 <div className="col-span-1 md:col-span-1 lg:col-span-1">
                     <h2 className="text-3xl font-bold mb-6">Megamart</h2>
                     <h3 className="font-semibold text-lg mb-4">Contact Us</h3>
-                    
+
                     <div className="space-y-4">
                         <div className="flex items-start space-x-3">
-                            <MessageCircle size={20} className="mt-1 flex-shrink-0" />
+                            <MessageCircle size={20} className="mt-1 shrink-0" />
                             <div>
                                 <p className="text-sm">Whats App</p>
                                 <p className="font-medium">+1 202-918-2132</p>
                             </div>
                         </div>
                         <div className="flex items-start space-x-3">
-                            <Phone size={20} className="mt-1 flex-shrink-0" />
+                            <Phone size={20} className="mt-1 shrink-0" />
                             <div>
                                 <p className="text-sm">Call Us</p>
                                 <p className="font-medium">+1 202-918-2132</p>

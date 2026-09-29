@@ -47,7 +47,7 @@ export function BrandsSection() {
 
                         {/* Phone image placeholder */}
                         <div className="absolute right-4 bottom-[-10%] w-24 h-40 bg-gray-800/80 rounded-xl border border-gray-600 shadow-2xl transform rotate-12 group-hover:rotate-0 transition duration-300">
-                             <div className="absolute inset-1 bg-gradient-to-t from-gray-900 to-gray-700 rounded-lg"></div>
+                             <div className="absolute inset-1 bg-linear-to-t from-gray-900 to-gray-700 rounded-lg"></div>
                         </div>
                     </div>
                 ))}

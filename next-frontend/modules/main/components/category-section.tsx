@@ -46,7 +46,7 @@ export function CategorySection() {
                             <div className="w-16 h-16 rounded-md bg-gray-300 relative overflow-hidden">
                                 {idx === 0 && (
                                     <div className="absolute inset-1 bg-black rounded">
-                                        <div className="w-full h-full bg-gradient-to-br from-blue-400 to-purple-500 opacity-80" />
+                                        <div className="w-full h-full bg-linear-to-br from-blue-400 to-purple-500 opacity-80" />
                                     </div>
                                 )}
                             </div>

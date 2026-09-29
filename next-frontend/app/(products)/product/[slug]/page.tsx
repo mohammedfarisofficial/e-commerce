@@ -44,7 +44,7 @@ export default async function ProductPage({ params }: { params: { slug: string }
                         {/* Product Image placeholder */}
                         <div className="w-64 h-96 bg-gray-200 rounded-xl relative shadow-xl transform hover:scale-105 transition duration-300">
                             <div className="absolute inset-1 bg-black rounded-lg overflow-hidden">
-                                <div className="w-full h-full bg-gradient-to-br from-blue-400 to-purple-500 opacity-80"></div>
+                                <div className="w-full h-full bg-linear-to-br from-blue-400 to-purple-500 opacity-80"></div>
                             </div>
                         </div>
                     </div>

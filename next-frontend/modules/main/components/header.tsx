@@ -57,7 +57,7 @@ export function Header() {
                             <Search size={20} />
                         </div>
                         <input
-                            className="peer h-full w-full outline-none text-sm text-gray-700 pr-2 bg-transparent"
+                            className="peer h-full w-full outline-hidden text-sm text-gray-700 pr-2 bg-transparent"
                             type="text"
                             id="search"
                             placeholder="Search essentials, groceries and more..."
@@ -80,7 +80,7 @@ export function Header() {
                             <span className="hidden sm:inline">Sign Up/Sign In</span>
                         </Link>
                     )}
-                    <div className="h-6 w-[1px] bg-gray-300 hidden sm:block" />
+                    <div className="h-6 w-px bg-gray-300 hidden sm:block" />
                     <Link
                         href={user ? "/cart" : "/login?redirect=/cart"}
                         className="flex items-center space-x-2 text-gray-700 hover:text-[#008ECC] transition cursor-pointer font-medium relative"
@@ -100,11 +100,10 @@ export function Header() {
                 {categories.map((cat, idx) => (
                     <button
                         key={idx}
-                        className={`flex items-center space-x-1 px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
-                            cat.active
+                        className={`flex items-center space-x-1 px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${cat.active
                                 ? "bg-[#008ECC] text-white"
                                 : "bg-[#F3F9FB] text-gray-700 hover:bg-gray-200"
-                        }`}
+                            }`}
                     >
                         <span>{cat.name}</span>
                         <ChevronDown size={14} className={cat.active ? "text-white" : "text-gray-500"} />
