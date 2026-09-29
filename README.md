@@ -40,10 +40,3 @@ By including `stock: { $gte: item.quantity }` directly in the query criteria, Mo
 1. Navigate to `next-frontend`
 2. Run `npm install`
 3. Run `npm run dev` (or `npm run build` & `npm start`)
-
-## Recent Improvements
-- Implemented real-time API-driven cart (no local storage discrepancies)
-- Handled out-of-stock scenarios gracefully
-- Automated Database Seeding (products, categories, pricing, stock)
-- Added Skeleton Loaders for optimized perceived performance
-- Formatted prices with local currency representation (₹10,000)
