@@ -1,7 +1,10 @@
 import { Router } from "express";
+import { productControllers } from "./controllers";
 
 const productRouter = Router();
 
-// Routes will be added as controllers are implemented
+productRouter.get("/", productControllers.getProducts);
+productRouter.get("/categories", productControllers.getCategories);
+productRouter.get("/:slug", productControllers.getProductBySlug);
 
 export default productRouter;

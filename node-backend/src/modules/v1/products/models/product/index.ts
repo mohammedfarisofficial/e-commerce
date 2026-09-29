@@ -10,7 +10,10 @@ const definition: SchemaDefinition<SchemaDefinitionType<ProductDocument>> = {
     category: { type: Schema.Types.ObjectId, ref: "Category", required: true },
     images: [{ type: String }],
     variants: [{ type: Schema.Types.ObjectId, ref: "ProductVariant" }],
+    originalPrice: { type: Number, default: 0 },
+    discount: { type: Number, default: 0 },
     price: { type: Number, default: 0, min: 0 },
+    stock: { type: Number, default: 0, min: 0 },
 };
 
 const ProductSchema = new Schema<ProductDocument>(definition, {

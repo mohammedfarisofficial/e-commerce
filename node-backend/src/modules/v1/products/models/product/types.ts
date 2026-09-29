@@ -9,7 +9,10 @@ export interface ProductDocument extends Document {
     category: Types.ObjectId;
     images: string[];
     variants: Types.ObjectId[];
+    originalPrice?: number;
+    discount?: number;
     price: number;
+    stock: number;
     created_at: Date;
     updated_at: Date;
 }
