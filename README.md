@@ -40,3 +40,23 @@ By including `stock: { $gte: item.quantity }` directly in the query criteria, Mo
 1. Navigate to `next-frontend`
 2. Run `npm install`
 3. Run `npm run dev` (or `npm run build` & `npm start`)
+
+## API Endpoints
+
+### Authentication
+- `POST /api/v1/auth/register` - Register a new user
+- `POST /api/v1/auth/login` - Authenticate user and receive tokens
+- `POST /api/v1/auth/refresh` - Refresh access token
+- `POST /api/v1/auth/logout` - Logout user
+
+### Products
+- `GET /api/v1/products` - List all products
+- `GET /api/v1/products/:slug` - Get product details by slug
+
+### Cart & Checkout (Requires Authentication)
+- `GET /api/v1/orders/cart` - Get user's active cart
+- `POST /api/v1/orders/cart/add` - Add item to cart
+- `PATCH /api/v1/orders/cart/:productId` - Update item quantity
+- `DELETE /api/v1/orders/cart/:productId` - Remove item from cart
+- `DELETE /api/v1/orders/cart` - Clear entire cart
+- `POST /api/v1/orders/cart/checkout` - Process checkout (Atomically verifies stock before completing)
